@@ -1,0 +1,7 @@
+mat-card{
+    width: 80%;
+}
+
+.register__wrapper{
+    background: linear-gradient(to right, rgb(11, 86, 172), rgb(36, 155, 211));
+}

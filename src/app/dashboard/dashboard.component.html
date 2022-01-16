@@ -1,0 +1,53 @@
+<mat-sidenav-container fullscreen>
+    <mat-sidenav #sidenav  mode="side" class="example-sidenav" [ngStyle]="{ 'width.em': sidenavWidth }" opened="true" 
+    >
+      <div class="logomain">Dashboard</div>
+      <mat-nav-list>
+        <mat-list-item routerLink="1" routerLinkActive="active" >
+          <mat-icon mat-list-icon>person</mat-icon>
+          <div fxFlex="10"></div>
+          <div *ngIf="sidenavWidth > 6" class="sidenav-item">
+            <h5 class="lead"><a routerLink="/employer/login"></a>Employer</h5>
+          </div>
+        </mat-list-item>
+  
+        <mat-list-item routerLink="2" routerLinkActive="active">
+          <mat-icon mat-list-icon>person</mat-icon>
+          <div fxFlex="10"></div>
+          <div *ngIf="sidenavWidth > 6" class="sidenav-item">
+            <h5 class="lead">Job Seekers</h5>
+          </div>
+        </mat-list-item>
+  
+    
+  
+      </mat-nav-list>
+  
+    </mat-sidenav>
+    
+  
+    <div class="example-sidenav-content">
+      <!-- <router-outlet></router-outlet> -->
+      <mat-icon (click)="sidenav.toggle()" class="sidenav-menu">menu</mat-icon>
+    </div>
+    <div class="row">
+        
+        <div class="col" >
+            <mat-card class="card"><h3 style="text-align:center;">No of Jobs</h3>
+                <span id="class" class="material-icons" >work</span>
+            </mat-card>
+            <!-- <div class="card card-block w-25">Card</div> -->
+        </div>
+        
+        <div class="col" >
+            <mat-card class="card2"> <h3 style="text-align:center;">No of Jobs</h3>
+                <span id="class2" class="material-icons" >app_registration</span>
+            </mat-card>
+            <!-- <div class="card card-block w-25">Card</div> -->
+        </div>
+    </div>
+  
+  </mat-sidenav-container>
+
+
+ 

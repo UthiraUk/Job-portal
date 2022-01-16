@@ -1,0 +1,34 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+/* a:hover, a:active{
+    color: lightgray;
+} */
+.nav-caption{
+    display: inline-block;
+    padding-left: 6px;
+}
+.example-sidenav
+{
+    background-color: grey;
+}
+.row{
+    margin-top: 150px;
+}
+.card{
+    height:150px;
+    background-color:linen;
+   
+}
+.card2{
+    height:150px;
+    background-color:lightcyan;
+ 
+}
+#class{
+ float:bottom;
+}
+#class2{
+float:bottom;
+}

@@ -1,0 +1,25 @@
+/* .login__wrapper{
+    background: linear-gradient(to right, rgb(52, 114, 212), rgb(54, 154, 236));
+} */
+
+mat-card{
+    width: 80%;
+    height: 80vh;
+    padding: 0;
+}
+
+.login__left{
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url(src/assets/images/login_img.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+p{
+    color: #fff;
+    text-align: center;
+}
+
+.row, .login__left{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}

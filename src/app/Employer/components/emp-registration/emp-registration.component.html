@@ -1,0 +1,62 @@
+<div class="d-flex justify-content-center py-4 register__wrapper">
+        <mat-card class="mt-2 px-5 mb-3">
+            <form [formGroup]="registerForm"  (ngSubmit)="OnRegister()">
+                    <h1 class="mt-4" >Employer Registration</h1>
+                    <div class="form-group">
+                        <label for="firstName" class="form-label">FirstName</label>
+                        <input type="text" class="form-control" id="firstName" formControlName="firstname" 
+                        [ngClass]="{'is-invalid': submitted && f.firstname.errors}">
+                        
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastName" class="form-label">LastName</label>
+                        <input type="text" class="form-control" id="lastName" formControlName="lastname"
+                        [ngClass]="{'is-invalid': submitted && f.lastname.errors}">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email ID</label>
+                        <input type="email" class="form-control" id="email" formControlName="email"
+                        [ngClass]="{'is-invalid': submitted && f.email.errors}">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="userName" class="form-label">User Name</label>
+                        <input type="text" class="form-control" id="userName"formControlName="username"
+                        [ngClass]="{'is-invalid': submitted && f.username.errors}">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" class="form-control" id="company"formControlName="companyname"
+                        [ngClass]="{'is-invalid': submitted && f.companyname.errors}">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="text" class="form-control" id="password" formControlName="password"
+                        [ngClass]="{'is-invalid': submitted && f.password.errors}">
+                        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                            <div *ngIf="f.password.errors.required">Password is required</div>
+                            <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+                        </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="text" class="form-control" id="confirmPassword" formControlName="confirmpassword"
+                        [ngClass]="{'is-invalid': submitted && f.confirmpassword.errors}">
+                        <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+                            <div *ngIf="f.confirmpassword.errors.required">Confirm Password is required</div>
+                            <div *ngIf="f.confirmpassword.errors.mustMatch">Passwords must match</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" >Register</button>
+                    </div>
+                    Already a User? <a routerLink="/employer/login">Login</a>
+                 
+                </form>
+        </mat-card>
+</div>

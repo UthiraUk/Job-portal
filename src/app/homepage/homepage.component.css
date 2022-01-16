@@ -1,0 +1,21 @@
+.wrapper{
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../assets/images/campaign.jpg); */
+    background-position: center;
+    background-size: cover;
+}
+button{
+    width: 150px;
+    background-color: rgb(8, 115, 187) !important;
+    outline: none !important;
+}
+
+.main__title{
+    color: #fff;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.sub__title{
+    color: #fff;
+    font-weight: 600;
+}

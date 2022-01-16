@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "firstname": "uthira",
+      "lastname": "kumar",
+      "email": "uk@gmail.com",
+      "username": "uthirakumar",
+      "companyname": "uk ",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": 1
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
