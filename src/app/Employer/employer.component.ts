@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
     constructor(private router: Router){}
 
     ngOnInit(){
-      this.router.navigate(['employer/login']);
+      // this.router.navigate(['employer/login']);
     }
 
   }

@@ -15,7 +15,7 @@ export class HomepageComponent implements OnInit {
 
 
   navigateEmp(){
-    this.router.navigateByUrl('/employer')
+    this.router.navigateByUrl('/employer/login')
   }
 
   navigateSeekers(){

@@ -1,4 +1,5 @@
 export class empModel{
+    [x: string]: any;
     firstname: string="";
     lastname: string="";
     email: string="";

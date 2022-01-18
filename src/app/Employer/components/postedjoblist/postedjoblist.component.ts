@@ -8,40 +8,12 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class PostedjoblistComponent implements OnInit {
 
+
   
-
-
 constructor(){}
-ngOnInit(){}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ngOnInit(){
+ 
+}
 
 
 

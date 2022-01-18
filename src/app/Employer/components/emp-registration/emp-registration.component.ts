@@ -40,15 +40,15 @@ get f()
 }
 OnRegister()
 {
-  // this.empregModelObj.firstname = this.registerForm.value.firstname;
-  // this.empregModelObj.lastname = this.registerForm.value.lastname;
-  // this.empregModelObj.email = this.registerForm.value.email;
-  // this.empregModelObj.username = this.registerForm.value.username;
-  // this.empregModelObj.companyname = this.registerForm.value.companyname;
-  // this.empregModelObj.password = this.registerForm.value.password;
-  // this.empregModelObj.confirmpassword = this.registerForm.value.password;
+  this.empregModelObj.firstname = this.registerForm.value.firstname;
+  this.empregModelObj.lastname = this.registerForm.value.lastname;
+  this.empregModelObj.email = this.registerForm.value.email;
+  this.empregModelObj.username = this.registerForm.value.username;
+  this.empregModelObj.companyname = this.registerForm.value.companyname;
+  this.empregModelObj.password = this.registerForm.value.password;
+  this.empregModelObj.confirmpassword = this.registerForm.value.password;
 
-  this.api.postEmpolyee(this.registerForm.value)
+  this.api.postEmpolyee(this.empregModelObj)
   .subscribe(res=>{
     this.submitted = true;
     if (this.registerForm.invalid) {
